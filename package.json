@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-wifiscan",
+  "version": "0.0.1",
+  "description": "Node-RED node to scan your network",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arlemi/node-red-contrib-wifiscan.git"
+    },
+    "keywords": [
+        "node-red",
+        "wifi",
+        "scan"
+    ],
+    "node-red": {
+        "nodes": {
+            "wifiscan": "wifiscan/wifiscan.js"
+        }
+    },
+    "contributors": [
+        "Arlemi Turpault <aturpaul@fr.ibm.com>"
+    ],
+    "dependencies": {
+        "node-wifiscanner": "0.2.1"
+    }
+}
