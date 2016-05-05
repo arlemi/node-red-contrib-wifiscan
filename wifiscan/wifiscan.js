@@ -1,7 +1,7 @@
 module.exports = function(RED) {
 
-	var wifiscanner = require('./node_modules/node-wifiscanner/lib/wifiscanner.js');
-	
+	var wifiscanner = require('node-wifiscanner');
+
 	function WifiScanNode(config) {
 		RED.nodes.createNode(this,config);
 		var node = this;
