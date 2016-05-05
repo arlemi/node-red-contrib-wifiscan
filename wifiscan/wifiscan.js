@@ -1,14 +1,15 @@
-var wifiscanner = require('wifiscanner.js');
-
 module.exports = function(RED) {
 
-	function WifiScanNode(n) {
-		RED.nodes.createNode(this,n);
+	var wifiscanner = require('wifiscanner.js');
+
+	function WifiScanNode(config) {
+		RED.nodes.createNode(this,config);
 		var node = this;
-		node.target = n.target;
-		node.scantype = n.scantype;
+
+		this.log('wifiscan - Initialized') ;
 
 		node.on("input", function(msg) {
+			this.log('wifiscan - Input received');
 			wifiscanner.scan(function(err, data){
 			    if (err) {
 			        console.log("Error : " + err);

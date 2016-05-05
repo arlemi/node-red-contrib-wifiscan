@@ -3,13 +3,12 @@
     category: "function",
     color: "#83B3B3",
     defaults: {
-      name: {value:"", required: false},
-      target: {value:"192.168.0.0/24", required: true},
-      scantype: {value:"", required: true}
+      name: {value:"", required: false}
     },
     inputs:1,
     outputs:1,
     icon: "wifiscan.png",
+    paletteLabel: "Scan Wifi",
     label: function() {
       return this.name ? this.name : "Wifi scanner";
     }
