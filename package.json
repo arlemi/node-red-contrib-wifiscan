@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-wifiscan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node-RED node to scan your network",
     "repository": {
         "type": "git",
@@ -16,10 +16,13 @@
             "wifiscan": "wifiscan/wifiscan.js"
         }
     },
-    "contributors": [
-        "Arlemi Turpault <aturpaul@fr.ibm.com>"
-    ],
+    "author": 
+        { "name" : "Arlemi Turpault", 
+        "email" : "arlemi.turpault@gmail.com", 
+        "url" : "https://twitter.com/arlemi"
+        },
     "dependencies": {
         "node-wifiscanner": "0.2.1"
-    }
+    },
+    "license" : "MIT"
 }
